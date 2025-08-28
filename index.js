@@ -1,16 +1,14 @@
-// Function to find the highest marks
-function findHighestMarks(marks) {
-  let highest = marks[0]; // assume first element is highest
+// index.js
+const http = require('http');
 
-  for (let i = 1; i < marks.length; i++) {
-    if (marks[i] > highest) {
-      highest = marks[i]; // update if current mark is greater
-    }
-  }
+const server = http.createServer((req, res) => {
+  // Simple API → always return JSON
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({ message: 'Hello, World!' }));
+});
 
-  return highest;
-}
-
-// Example usage
-let studentMarks = [78, 85, 92, 67, 99, 81];
-console.log("Highest Marks:", findHighestMarks(studentMarks));
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log ('server ,running at http://localhost:3000');
+  });
