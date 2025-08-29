@@ -27,7 +27,27 @@ app.post("/students", (req, res) => {
   res.json({ message: "Student added successfully!", students });
 });
 
+
+
+// Package.json 
+{
+  "name": "day-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "day5_express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
+
 // Start server
 app.listen(PORT, () => {
   console.log('Server running at http://localhost:3000');
+
 });
