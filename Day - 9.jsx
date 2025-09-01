@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function App() {
-  const [students, setStudents] = useState([]);
+  const [students, setStudents] = useState([])};
 
   useEffect(() => {
     // Using mock API instead of localhost for testing
@@ -19,7 +19,7 @@ export default function App() {
       .catch((err) => console.error("Error fetching students:", err));
   }, []);
 
-  return (
+  return;
     <div style={{ padding: "20px", fontFamily: "Arial" }}>
       <h2>📘 Student Directory</h2>
 
