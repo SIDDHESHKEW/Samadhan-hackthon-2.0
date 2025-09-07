@@ -1,4 +1,3 @@
-JSON 
 {
   "name": "auth-server",
   "version": "1.0.0",
@@ -20,7 +19,6 @@ JSON
   }
 }
 
-JS
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
@@ -101,7 +99,6 @@ app.get("/api/auth/dashboard", (req, res) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 
-. env
 MONGO_URI=mongodb://127.0.0.1:27017/authdb
 JWT_SECRET=yourSecretKey
 PORT=5000
